@@ -8,8 +8,7 @@
         window.addEventListener( "load", toggleAppStatus );
 
     // Klick auf Btn  --> Zustand umschalten
-        btn1.addEventListener( "click", toggleAppStatus );
-        btn2.addEventListener( "click", toggleAppStatus );
+        btn.addEventListener( "click", toggleAppStatus );
 
 /********  Business-Logic | Toggle **********/
     // Wechselschalter:  true = !false | false = !true
@@ -45,7 +44,7 @@
     // Modul: Umschaltung BtnTxt | Test:
         // switchBtnTxt("night");
         // switchBtnTxt("day");
-        function switchBtnTxt( modeStr ) { btn1.innerHTML = modeStr; }
+        function switchBtnTxt( modeStr ) { btn.innerHTML = modeStr; }
 
 /* Tools */
     function output( outputData ) { console.log( outputData ); }
