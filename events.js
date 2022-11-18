@@ -1,5 +1,6 @@
 /********  Variablen **********/
-    const btn = document.getElementById( "trigBtn" );
+    const btn1 = document.getElementById( "trigBtn" );
+    const btn2 = document.getElementById( "trigBtn" );
     let appStatus = true;
 
 /********  Event-Listener **********/
@@ -7,7 +8,8 @@
         window.addEventListener( "load", toggleAppStatus );
 
     // Klick auf Btn  --> Zustand umschalten
-        btn.addEventListener( "click", toggleAppStatus );
+        btn1.addEventListener( "click", toggleAppStatus );
+        btn2.addEventListener( "click", toggleAppStatus );
 
 /********  Business-Logic | Toggle **********/
     // Wechselschalter:  true = !false | false = !true
@@ -43,7 +45,7 @@
     // Modul: Umschaltung BtnTxt | Test:
         // switchBtnTxt("night");
         // switchBtnTxt("day");
-        function switchBtnTxt( modeStr ) { btn.innerHTML = modeStr; }
+        function switchBtnTxt( modeStr ) { btn1.innerHTML = modeStr; }
 
 /* Tools */
     function output( outputData ) { console.log( outputData ); }
