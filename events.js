@@ -1,6 +1,5 @@
 /********  Variablen **********/
-    const btn1 = document.getElementById( "trigBtn" );
-    const btn2 = document.getElementById( "trigBtn" );
+    const btn = document.getElementById( "trigBtn" );
     let appStatus = true;
 
 /********  Event-Listener **********/
